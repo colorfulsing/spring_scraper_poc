@@ -13,3 +13,8 @@ pages << {
     freshness: Time.now.utc.strftime('%FT%TZ'),
     #fetch_type: 'browser'
 }
+
+pages << {
+    url: "https://fetchtest.datahen.com/statuses/200?a=#{i}",
+    page_type: "test"
+  }
