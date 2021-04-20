@@ -1,0 +1,19 @@
+seeder:
+  file: ./seeder/seeder.rb
+  disabled: false
+parsers:
+  - page_type: listings
+    file: ./parsers/listings.rb
+    disabled: false
+  - page_type: details
+    file: ./parsers/details.rb
+    disabled: true
+exporters:
+  - file: ./exporters/products_last10_json.yaml
+    disabled: false
+  - file: ./exporters/products_json.yaml
+    disabled: false
+  - file: ./exporters/products_csv.yaml
+    disabled: false
+finisher:
+  file: ./finisher/finisher.rb
