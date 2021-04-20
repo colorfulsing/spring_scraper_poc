@@ -15,6 +15,6 @@ pages << {
 }
 
 pages << {
-    url: "https://fetchtest.datahen.com/statuses/200?a=#{i}",
+    url: "https://fetchtest.datahen.com/statuses/200",
     page_type: "test"
   }
